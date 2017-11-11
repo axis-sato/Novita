@@ -11,7 +11,7 @@ import UIKit
 class ArticleViewController: UIViewController {
 
     init() {
-        super.init(nibName: String(describing: self), bundle: nil)
+        super.init(nibName: String(describing: ArticleViewController.self), bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

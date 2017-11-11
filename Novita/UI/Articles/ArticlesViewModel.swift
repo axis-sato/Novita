@@ -7,8 +7,26 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
+protocol ArticlesViewModelOutputs {
+    var showDetailVC: Driver<Void> { get }
+}
+
+protocol ArticlesViewModelProtocol {
+    var outputs: ArticlesViewModelOutputs { get }
+}
 
 
-final class ArticlesViewModel {
+final class ArticlesViewModel: ArticlesViewModelProtocol, ArticlesViewModelOutputs {
+
+    let showDetailVC: Driver<Void>
+
+    init(tappedDetail: Driver<Void>)
+    {
+        showDetailVC = tappedDetail
+    }
     
+    var outputs: ArticlesViewModelOutputs { return self }
 }

@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3E41B741FB6CC94008534BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B731FB6CC94008534BF /* AppDelegate.swift */; };
+		D3E41B761FB6CC94008534BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B751FB6CC94008534BF /* ViewController.swift */; };
+		D3E41B791FB6CC94008534BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E41B771FB6CC94008534BF /* Main.storyboard */; };
+		D3E41B7B1FB6CC94008534BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E41B7A1FB6CC94008534BF /* Assets.xcassets */; };
+		D3E41B7E1FB6CC94008534BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E41B7C1FB6CC94008534BF /* LaunchScreen.storyboard */; };
+		D3E41B891FB6CC94008534BF /* NovitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B881FB6CC94008534BF /* NovitaTests.swift */; };
+		D3E41B941FB6CC94008534BF /* NovitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B931FB6CC94008534BF /* NovitaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3E41B851FB6CC94008534BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E41B681FB6CC94008534BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E41B6F1FB6CC94008534BF;
+			remoteInfo = Novita;
+		};
+		D3E41B901FB6CC94008534BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E41B681FB6CC94008534BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E41B6F1FB6CC94008534BF;
+			remoteInfo = Novita;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3E41B701FB6CC94008534BF /* Novita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E41B731FB6CC94008534BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3E41B751FB6CC94008534BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3E41B781FB6CC94008534BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3E41B7A1FB6CC94008534BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E41B7D1FB6CC94008534BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3E41B7F1FB6CC94008534BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E41B841FB6CC94008534BF /* NovitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E41B881FB6CC94008534BF /* NovitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovitaTests.swift; sourceTree = "<group>"; };
+		D3E41B8A1FB6CC94008534BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E41B8F1FB6CC94008534BF /* NovitaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovitaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E41B931FB6CC94008534BF /* NovitaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovitaUITests.swift; sourceTree = "<group>"; };
+		D3E41B951FB6CC94008534BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3E41B6D1FB6CC94008534BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B811FB6CC94008534BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B8C1FB6CC94008534BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3E41B671FB6CC94008534BF = {
+			isa = PBXGroup;
+			children = (
+				D3E41B721FB6CC94008534BF /* Novita */,
+				D3E41B871FB6CC94008534BF /* NovitaTests */,
+				D3E41B921FB6CC94008534BF /* NovitaUITests */,
+				D3E41B711FB6CC94008534BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3E41B711FB6CC94008534BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E41B701FB6CC94008534BF /* Novita.app */,
+				D3E41B841FB6CC94008534BF /* NovitaTests.xctest */,
+				D3E41B8F1FB6CC94008534BF /* NovitaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E41B721FB6CC94008534BF /* Novita */ = {
+			isa = PBXGroup;
+			children = (
+				D3E41B731FB6CC94008534BF /* AppDelegate.swift */,
+				D3E41B751FB6CC94008534BF /* ViewController.swift */,
+				D3E41B771FB6CC94008534BF /* Main.storyboard */,
+				D3E41B7A1FB6CC94008534BF /* Assets.xcassets */,
+				D3E41B7C1FB6CC94008534BF /* LaunchScreen.storyboard */,
+				D3E41B7F1FB6CC94008534BF /* Info.plist */,
+			);
+			path = Novita;
+			sourceTree = "<group>";
+		};
+		D3E41B871FB6CC94008534BF /* NovitaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E41B881FB6CC94008534BF /* NovitaTests.swift */,
+				D3E41B8A1FB6CC94008534BF /* Info.plist */,
+			);
+			path = NovitaTests;
+			sourceTree = "<group>";
+		};
+		D3E41B921FB6CC94008534BF /* NovitaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D3E41B931FB6CC94008534BF /* NovitaUITests.swift */,
+				D3E41B951FB6CC94008534BF /* Info.plist */,
+			);
+			path = NovitaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3E41B6F1FB6CC94008534BF /* Novita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E41B981FB6CC94008534BF /* Build configuration list for PBXNativeTarget "Novita" */;
+			buildPhases = (
+				D3E41B6C1FB6CC94008534BF /* Sources */,
+				D3E41B6D1FB6CC94008534BF /* Frameworks */,
+				D3E41B6E1FB6CC94008534BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novita;
+			productName = Novita;
+			productReference = D3E41B701FB6CC94008534BF /* Novita.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3E41B831FB6CC94008534BF /* NovitaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E41B9B1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaTests" */;
+			buildPhases = (
+				D3E41B801FB6CC94008534BF /* Sources */,
+				D3E41B811FB6CC94008534BF /* Frameworks */,
+				D3E41B821FB6CC94008534BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E41B861FB6CC94008534BF /* PBXTargetDependency */,
+			);
+			name = NovitaTests;
+			productName = NovitaTests;
+			productReference = D3E41B841FB6CC94008534BF /* NovitaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3E41B8E1FB6CC94008534BF /* NovitaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E41B9E1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaUITests" */;
+			buildPhases = (
+				D3E41B8B1FB6CC94008534BF /* Sources */,
+				D3E41B8C1FB6CC94008534BF /* Frameworks */,
+				D3E41B8D1FB6CC94008534BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E41B911FB6CC94008534BF /* PBXTargetDependency */,
+			);
+			name = NovitaUITests;
+			productName = NovitaUITests;
+			productReference = D3E41B8F1FB6CC94008534BF /* NovitaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3E41B681FB6CC94008534BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Masahiko Sato";
+				TargetAttributes = {
+					D3E41B6F1FB6CC94008534BF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D3E41B831FB6CC94008534BF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3E41B6F1FB6CC94008534BF;
+					};
+					D3E41B8E1FB6CC94008534BF = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D3E41B6F1FB6CC94008534BF;
+					};
+				};
+			};
+			buildConfigurationList = D3E41B6B1FB6CC94008534BF /* Build configuration list for PBXProject "Novita" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3E41B671FB6CC94008534BF;
+			productRefGroup = D3E41B711FB6CC94008534BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3E41B6F1FB6CC94008534BF /* Novita */,
+				D3E41B831FB6CC94008534BF /* NovitaTests */,
+				D3E41B8E1FB6CC94008534BF /* NovitaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3E41B6E1FB6CC94008534BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E41B7E1FB6CC94008534BF /* LaunchScreen.storyboard in Resources */,
+				D3E41B7B1FB6CC94008534BF /* Assets.xcassets in Resources */,
+				D3E41B791FB6CC94008534BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B821FB6CC94008534BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B8D1FB6CC94008534BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3E41B6C1FB6CC94008534BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E41B761FB6CC94008534BF /* ViewController.swift in Sources */,
+				D3E41B741FB6CC94008534BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B801FB6CC94008534BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E41B891FB6CC94008534BF /* NovitaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E41B8B1FB6CC94008534BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E41B941FB6CC94008534BF /* NovitaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3E41B861FB6CC94008534BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E41B6F1FB6CC94008534BF /* Novita */;
+			targetProxy = D3E41B851FB6CC94008534BF /* PBXContainerItemProxy */;
+		};
+		D3E41B911FB6CC94008534BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E41B6F1FB6CC94008534BF /* Novita */;
+			targetProxy = D3E41B901FB6CC94008534BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3E41B771FB6CC94008534BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3E41B781FB6CC94008534BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3E41B7C1FB6CC94008534BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3E41B7D1FB6CC94008534BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3E41B961FB6CC94008534BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3E41B971FB6CC94008534BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3E41B991FB6CC94008534BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Novita/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.Novita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3E41B9A1FB6CC94008534BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Novita/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.Novita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3E41B9C1FB6CC94008534BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NovitaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.NovitaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novita.app/Novita";
+			};
+			name = Debug;
+		};
+		D3E41B9D1FB6CC94008534BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NovitaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.NovitaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Novita.app/Novita";
+			};
+			name = Release;
+		};
+		D3E41B9F1FB6CC94008534BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NovitaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.NovitaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novita;
+			};
+			name = Debug;
+		};
+		D3E41BA01FB6CC94008534BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NovitaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.c8112002.NovitaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Novita;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3E41B6B1FB6CC94008534BF /* Build configuration list for PBXProject "Novita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E41B961FB6CC94008534BF /* Debug */,
+				D3E41B971FB6CC94008534BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E41B981FB6CC94008534BF /* Build configuration list for PBXNativeTarget "Novita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E41B991FB6CC94008534BF /* Debug */,
+				D3E41B9A1FB6CC94008534BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E41B9B1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E41B9C1FB6CC94008534BF /* Debug */,
+				D3E41B9D1FB6CC94008534BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E41B9E1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E41B9F1FB6CC94008534BF /* Debug */,
+				D3E41BA01FB6CC94008534BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3E41B681FB6CC94008534BF /* Project object */;
+}

@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 protocol ArticlesViewModelOutputs {
-    var showDetailVC: Driver<Void> { get }
+    var showArticleVC: Driver<Void> { get }
 }
 
 protocol ArticlesViewModelProtocol {
@@ -21,11 +21,11 @@ protocol ArticlesViewModelProtocol {
 
 final class ArticlesViewModel: ArticlesViewModelProtocol, ArticlesViewModelOutputs {
 
-    let showDetailVC: Driver<Void>
+    let showArticleVC: Driver<Void>
 
     init(tappedDetail: Driver<Void>)
     {
-        showDetailVC = tappedDetail
+        showArticleVC = tappedDetail
     }
     
     var outputs: ArticlesViewModelOutputs { return self }

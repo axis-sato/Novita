@@ -11,7 +11,12 @@ import RxSwift
 import RxCocoa
 
 class ArticlesViewController: UIViewController {
+    
+    // MARK: IBOutlet
     @IBOutlet weak var detailButton: UIButton!
+    
+    
+    // MARK: private property
     private let disposeBag = DisposeBag()
     
     private lazy var viewModel: ArticlesViewModelProtocol = {
@@ -22,6 +27,8 @@ class ArticlesViewController: UIViewController {
         return viewModel
     }()
 
+    
+    // MARK: initializer
     init() {
         super.init(nibName: String(describing: ArticlesViewController.self), bundle: nil)
     }
@@ -31,6 +38,7 @@ class ArticlesViewController: UIViewController {
     }
     
 
+    // MARK: private function
     private func showDetailVC() {
         let vc = ArticleViewController()
         navigationController?.pushViewController(vc, animated: true)
@@ -43,7 +51,7 @@ extension ArticlesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.outputs.showDetailVC.drive(onNext: { [weak self] in
+        viewModel.outputs.showArticleVC.drive(onNext: { [weak self] in
             self?.showDetailVC()
             }, onCompleted: nil, onDisposed: nil)
             .disposed(by: disposeBag)

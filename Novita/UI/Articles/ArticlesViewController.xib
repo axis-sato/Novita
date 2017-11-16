@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticlesViewController" customModule="Novita" customModuleProvider="target">
             <connections>
                 <outlet property="detailButton" destination="HZx-X1-e79" id="Pis-3s-WzB"/>
+                <outlet property="label" destination="JMt-vy-tEM" id="5uF-C8-xBh"/>
                 <outlet property="view" destination="8DJ-8V-grg" id="vtt-h5-BPo"/>
             </connections>
         </placeholder>

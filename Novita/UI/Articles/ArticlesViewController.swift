@@ -7,54 +7,54 @@
 //
 
 import UIKit
+import ReactorKit
 import RxSwift
 import RxCocoa
 
-class ArticlesViewController: UIViewController {
+class ArticlesViewController: BaseViewController, StoryboardView {
+    typealias Reactor = ArticleViewReactor
+    
     
     // MARK: IBOutlet
+    
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var detailButton: UIButton!
-    
-    
-    // MARK: private property
-    private let disposeBag = DisposeBag()
-    
-    private lazy var viewModel: ArticlesViewModelProtocol = {
-        let viewModel = ArticlesViewModel(
-            tappedDetail: detailButton.rx.tap.asDriver()
-        )
-
-        return viewModel
-    }()
 
     
     // MARK: initializer
-    init() {
+    
+    init(reactor: Reactor) {
         super.init(nibName: String(describing: ArticlesViewController.self), bundle: nil)
+        self.reactor = reactor
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    // MARK: binding
+    
+    func bind(reactor: ArticleViewReactor) {
+        
+        // View -> Reactor
+        detailButton.rx.tap
+            .map { Reactor.Action.showArticleVC }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        
+        // Reactor -> View
+        reactor.state.asObservable().map { $0.title }
+            .bind(to: navigationItem.rx.title)
+            .disposed(by: disposeBag)
+    }
+    
 
     // MARK: private function
+    
     private func showDetailVC() {
         let vc = ArticleViewController()
         navigationController?.pushViewController(vc, animated: true)
-    }
-}
-
-
-// MARK: - life cycle
-extension ArticlesViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        viewModel.outputs.showArticleVC.drive(onNext: { [weak self] in
-            self?.showDetailVC()
-            }, onCompleted: nil, onDisposed: nil)
-            .disposed(by: disposeBag)
-        
     }
 }

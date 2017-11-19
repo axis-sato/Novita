@@ -81,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F439A11FC1A30800944953 /* APIKit.framework in Frameworks */,
+				D3F439A21FC1A30800944953 /* Result.framework in Frameworks */,
 				F1AB00DEB39890498871F9B1 /* Pods_Novita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +172,8 @@
 		D3E41BA11FB6CE6B008534BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3F4399F1FC1A30800944953 /* APIKit.framework */,
+				D3F439A01FC1A30800944953 /* Result.framework */,
 				D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */,
 				D3E41BA21FB6CE6B008534BF /* Nimble.framework */,
 				D3E41BA41FB6CE6B008534BF /* Quick.framework */,
@@ -243,6 +247,7 @@
 				D3E41B6E1FB6CC94008534BF /* Resources */,
 				AC107966D8A49894D3C6D3B9 /* [CP] Embed Pods Frameworks */,
 				695BD2CC6A1E188F4A74A8B8 /* [CP] Copy Pods Resources */,
+				D3F439A41FC1A31C00944953 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -487,6 +492,21 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovitaTests/Pods-NovitaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D3F439A41FC1A31C00944953 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		DFC667284970D731095E88B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

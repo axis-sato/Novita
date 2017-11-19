@@ -22,7 +22,10 @@ final class ArticleViewReactor: Reactor {
         var title: String
     }
     
-    init() {
+    let provider: ServiceProviderType
+    
+    init(provider: ServiceProviderType) {
+        self.provider = provider
         initialState = State(
             title: "Novita"
         )

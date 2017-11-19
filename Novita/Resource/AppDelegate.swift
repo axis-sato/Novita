@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupInitialView() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let reactor = ArticleViewReactor()
+        let serviceProvider = ServiceProvider()
+        let reactor = ArticleViewReactor(provider: serviceProvider)
         let vc = ArticlesViewController(reactor: reactor)
         let nav = UINavigationController(rootViewController: vc)
         window?.rootViewController = nav

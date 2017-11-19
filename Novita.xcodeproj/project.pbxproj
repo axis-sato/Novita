@@ -18,7 +18,6 @@
 		D3E41B891FB6CC94008534BF /* NovitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B881FB6CC94008534BF /* NovitaTests.swift */; };
 		D3E41B941FB6CC94008534BF /* NovitaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B931FB6CC94008534BF /* NovitaUITests.swift */; };
 		D3E41BAF1FB6D738008534BF /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BAE1FB6D738008534BF /* ArticlesViewController.swift */; };
-		D3E41BB11FB6D745008534BF /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BB01FB6D745008534BF /* ArticlesViewModel.swift */; };
 		D3E41BB31FB6D751008534BF /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BB21FB6D751008534BF /* ArticleViewController.swift */; };
 		D3E41BB51FB6D75E008534BF /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BB41FB6D75E008534BF /* ArticleViewModel.swift */; };
 		D3E41BBE1FB6DCDB008534BF /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E41BBD1FB6DCDB008534BF /* ArticlesViewController.xib */; };
@@ -72,7 +71,6 @@
 		D3E41BA41FB6CE6B008534BF /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D3E41BA51FB6CE6B008534BF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		D3E41BAE1FB6D738008534BF /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
-		D3E41BB01FB6D745008534BF /* ArticlesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		D3E41BB21FB6D751008534BF /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		D3E41BB41FB6D75E008534BF /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		D3E41BBD1FB6DCDB008534BF /* ArticlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				D3E41BAE1FB6D738008534BF /* ArticlesViewController.swift */,
 				D39B75AD1FBC8EB300EF06EE /* ArticleViewReactor.swift */,
 				D3E41BBD1FB6DCDB008534BF /* ArticlesViewController.xib */,
-				D3E41BB01FB6D745008534BF /* ArticlesViewModel.swift */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 			files = (
 				D39B75AE1FBC8EB300EF06EE /* ArticleViewReactor.swift in Sources */,
 				D3E41BAF1FB6D738008534BF /* ArticlesViewController.swift in Sources */,
-				D3E41BB11FB6D745008534BF /* ArticlesViewModel.swift in Sources */,
 				D3E41BB31FB6D751008534BF /* ArticleViewController.swift in Sources */,
 				D3E41BB51FB6D75E008534BF /* ArticleViewModel.swift in Sources */,
 				D39B75B01FBC916600EF06EE /* BaseViewController.swift in Sources */,

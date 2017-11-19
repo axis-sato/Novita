@@ -10,6 +10,7 @@
 		3574F2DE40446DC1055A4B17 /* Pods_NovitaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F9475767A4779184B446 /* Pods_NovitaTests.framework */; };
 		4FD53ED749DFD966D5ECB962 /* Pods_NovitaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D969EE060BD3D8BD4266B /* Pods_NovitaUITests.framework */; };
 		D31395ED1FB6F38A009D5E8F /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31395EC1FB6F38A009D5E8F /* ArticleViewController.xib */; };
+		D31AF4801FC1A9D2009E9021 /* APIKit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */; };
 		D39B75AE1FBC8EB300EF06EE /* ArticleViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B75AD1FBC8EB300EF06EE /* ArticleViewReactor.swift */; };
 		D39B75B01FBC916600EF06EE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B75AF1FBC916600EF06EE /* BaseViewController.swift */; };
 		D3E41B741FB6CC94008534BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B731FB6CC94008534BF /* AppDelegate.swift */; };
@@ -21,6 +22,8 @@
 		D3E41BB31FB6D751008534BF /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BB21FB6D751008534BF /* ArticleViewController.swift */; };
 		D3E41BB51FB6D75E008534BF /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41BB41FB6D75E008534BF /* ArticleViewModel.swift */; };
 		D3E41BBE1FB6DCDB008534BF /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E41BBD1FB6DCDB008534BF /* ArticlesViewController.xib */; };
+		D3F439A11FC1A30800944953 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F4399F1FC1A30800944953 /* APIKit.framework */; };
+		D3F439A21FC1A30800944953 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F439A01FC1A30800944953 /* Result.framework */; };
 		F1AB00DEB39890498871F9B1 /* Pods_Novita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF0BDF07EEF939A7B030A79 /* Pods_Novita.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,7 @@
 		BCF0BDF07EEF939A7B030A79 /* Pods_Novita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Novita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31395EC1FB6F38A009D5E8F /* ArticleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
+		D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIKit+Rx.swift"; sourceTree = "<group>"; };
 		D39B75AD1FBC8EB300EF06EE /* ArticleViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewReactor.swift; sourceTree = "<group>"; };
 		D39B75AF1FBC916600EF06EE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D3E41B701FB6CC94008534BF /* Novita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novita.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +78,8 @@
 		D3E41BB21FB6D751008534BF /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		D3E41BB41FB6D75E008534BF /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		D3E41BBD1FB6DCDB008534BF /* ArticlesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
+		D3F4399F1FC1A30800944953 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		D3F439A01FC1A30800944953 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D31AF47E1FC1A994009E9021 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
 		D3E41B671FB6CC94008534BF = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,7 @@
 				D3E41BB71FB6D853008534BF /* Resource */,
 				D3E41BB61FB6D769008534BF /* Model */,
 				D3E41BAB1FB6D6F8008534BF /* UI */,
+				D31AF47E1FC1A994009E9021 /* Rx */,
 			);
 			path = Novita;
 			sourceTree = "<group>";
@@ -554,6 +569,7 @@
 				D3E41BB51FB6D75E008534BF /* ArticleViewModel.swift in Sources */,
 				D39B75B01FBC916600EF06EE /* BaseViewController.swift in Sources */,
 				D3E41B741FB6CC94008534BF /* AppDelegate.swift in Sources */,
+				D31AF4801FC1A9D2009E9021 /* APIKit+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,12 +49,4 @@ class ArticlesViewController: BaseViewController, StoryboardView {
             .bind(to: navigationItem.rx.title)
             .disposed(by: disposeBag)
     }
-    
-
-    // MARK: private function
-    
-    private func showDetailVC() {
-        let vc = ArticleViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }

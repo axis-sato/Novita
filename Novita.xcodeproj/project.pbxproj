@@ -12,6 +12,7 @@
 		D31395ED1FB6F38A009D5E8F /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31395EC1FB6F38A009D5E8F /* ArticleViewController.xib */; };
 		D31AF4801FC1A9D2009E9021 /* APIKit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */; };
 		D31AF4831FC1BC3D009E9021 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF4821FC1BC3D009E9021 /* Article.swift */; };
+		D31AF4861FC31C2D009E9021 /* APIKit+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF4851FC31C2D009E9021 /* APIKit+Parser.swift */; };
 		D39B75AE1FBC8EB300EF06EE /* ArticleViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B75AD1FBC8EB300EF06EE /* ArticleViewReactor.swift */; };
 		D39B75B01FBC916600EF06EE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B75AF1FBC916600EF06EE /* BaseViewController.swift */; };
 		D3E41B741FB6CC94008534BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E41B731FB6CC94008534BF /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
 		D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIKit+Rx.swift"; sourceTree = "<group>"; };
 		D31AF4821FC1BC3D009E9021 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D31AF4851FC31C2D009E9021 /* APIKit+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIKit+Parser.swift"; sourceTree = "<group>"; };
 		D39B75AD1FBC8EB300EF06EE /* ArticleViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewReactor.swift; sourceTree = "<group>"; };
 		D39B75AF1FBC916600EF06EE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D3E41B701FB6CC94008534BF /* Novita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novita.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,12 +141,21 @@
 			path = Rx;
 			sourceTree = "<group>";
 		};
-		D31AF4811FC1BC25009E9021 /* Model */ = {
+		D31AF4811FC1BC25009E9021 /* Eintities */ = {
 			isa = PBXGroup;
 			children = (
 				D31AF4821FC1BC3D009E9021 /* Article.swift */,
 			);
-			path = Model;
+			path = Eintities;
+			sourceTree = "<group>";
+		};
+		D31AF4841FC31BD2009E9021 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D31AF47E1FC1A994009E9021 /* Rx */,
+				D31AF4851FC31C2D009E9021 /* APIKit+Parser.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D3E41B671FB6CC94008534BF = {
@@ -172,11 +183,11 @@
 		D3E41B721FB6CC94008534BF /* Novita */ = {
 			isa = PBXGroup;
 			children = (
+				D31AF4811FC1BC25009E9021 /* Eintities */,
+				D3F4399A1FC1859300944953 /* Services */,
+				D3E41BAB1FB6D6F8008534BF /* Views */,
+				D31AF4841FC31BD2009E9021 /* Extensions */,
 				D3E41BB71FB6D853008534BF /* Resource */,
-				D31AF4811FC1BC25009E9021 /* Model */,
-				D3F4399A1FC1859300944953 /* Service */,
-				D3E41BAB1FB6D6F8008534BF /* UI */,
-				D31AF47E1FC1A994009E9021 /* Rx */,
 			);
 			path = Novita;
 			sourceTree = "<group>";
@@ -216,14 +227,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3E41BAB1FB6D6F8008534BF /* UI */ = {
+		D3E41BAB1FB6D6F8008534BF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D39B75AF1FBC916600EF06EE /* BaseViewController.swift */,
 				D3E41BAC1FB6D701008534BF /* Articles */,
 				D3E41BAD1FB6D71F008534BF /* Article */,
 			);
-			path = UI;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D3E41BAC1FB6D701008534BF /* Articles */ = {
@@ -257,13 +268,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		D3F4399A1FC1859300944953 /* Service */ = {
+		D3F4399A1FC1859300944953 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				D3F4399D1FC186EA00944953 /* ServiceProvider.swift */,
 				D3F4399B1FC1865900944953 /* APIClientService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +594,7 @@
 				D39B75AE1FBC8EB300EF06EE /* ArticleViewReactor.swift in Sources */,
 				D3E41BAF1FB6D738008534BF /* ArticlesViewController.swift in Sources */,
 				D3E41BB31FB6D751008534BF /* ArticleViewController.swift in Sources */,
+				D31AF4861FC31C2D009E9021 /* APIKit+Parser.swift in Sources */,
 				D3E41BB51FB6D75E008534BF /* ArticleViewModel.swift in Sources */,
 				D31AF4831FC1BC3D009E9021 /* Article.swift in Sources */,
 				D3F4399E1FC186EA00944953 /* ServiceProvider.swift in Sources */,

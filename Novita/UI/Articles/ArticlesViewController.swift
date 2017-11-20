@@ -18,6 +18,7 @@ class ArticlesViewController: BaseViewController, StoryboardView {
     // MARK: IBOutlet
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var requestArticlesButton: UIButton!
     @IBOutlet weak var detailButton: UIButton!
 
     
@@ -38,8 +39,8 @@ class ArticlesViewController: BaseViewController, StoryboardView {
     func bind(reactor: ArticleViewReactor) {
         
         // View -> Reactor
-        detailButton.rx.tap
-            .map { Reactor.Action.showArticleVC }
+        requestArticlesButton.rx.tap
+            .map { Reactor.Action.requestArticle }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
@@ -47,6 +48,12 @@ class ArticlesViewController: BaseViewController, StoryboardView {
         // Reactor -> View
         reactor.state.asObservable().map { $0.title }
             .bind(to: navigationItem.rx.title)
+            .disposed(by: disposeBag)
+        
+        reactor.state.asObservable().map { $0.articles }
+            .subscribe { articles in
+                print(articles)
+            }
             .disposed(by: disposeBag)
     }
 }

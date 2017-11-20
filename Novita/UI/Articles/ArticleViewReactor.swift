@@ -14,12 +14,16 @@ final class ArticleViewReactor: Reactor {
     var initialState: State
     
     enum Action {
-        case showArticleVC
+        case requestArticle
     }
+    
     enum Mutation {
+        case fetchArticles([Article])
     }
+    
     struct State {
         var title: String
+        var articles: [Article]
     }
     
     let provider: ServiceProviderType
@@ -27,23 +31,31 @@ final class ArticleViewReactor: Reactor {
     init(provider: ServiceProviderType) {
         self.provider = provider
         initialState = State(
-            title: "Novita"
+            title: "Novita",
+            articles: []
         )
+        
     }
 
-//    func mutate(action: Action) -> Observable<Mutation> {
-//        switch action {
-//        case .showArticleVC:
-//            return Observable.of(Mutation.foo)
-//        }
-//    }
+    func mutate(action: Action) -> Observable<Mutation> {
+        switch action {
+        case .requestArticle:
+            return provider.apiClientService
+                .requestArticles()
+                .map { articles in
+                    return .fetchArticles(articles)
+                }
+        }
+    }
     
-//    func reduce(state: State, mutation: Mutation) -> State {
-//        var state = state
-//        switch mutation {
-//        case .foo:
-//        }
-//
-//        return state
-//    }
+    func reduce(state: State, mutation: Mutation) -> State {
+        var state = state
+        
+        switch mutation {
+        case .fetchArticles(let articles):
+            state.articles = articles
+        }
+
+        return state
+    }
 }

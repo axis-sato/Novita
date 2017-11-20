@@ -10,6 +10,30 @@ import Foundation
 import APIKit
 import RxSwift
 
+
+class JSONDataParser: APIKit.DataParser {
+    var contentType: String? {
+        return "application/json"
+    }
+    
+    func parse(data: Data) throws -> Any {
+        return data
+    }
+}
+
+
+extension APIKit.Request where Response: Decodable {
+    var dataParser: DataParser {
+        return JSONDataParser()
+    }
+    
+    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Response {
+        return try JSONDecoder()
+            .decode(Response.self, from: object as! Data)
+    }
+}
+
+
 protocol APIRequest: Request {}
 
 extension APIRequest {
@@ -28,10 +52,6 @@ struct ArticlesRequest: APIRequest {
     
     var path: String {
         return "/articles"
-    }
-    
-    func response(from object: Any, urlResponse: HTTPURLResponse) throws -> [Article] {
-        return [Article(title: "")]
     }
 }
 

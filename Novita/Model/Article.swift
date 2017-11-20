@@ -8,10 +8,8 @@
 
 import Foundation
 
-struct Article {
+struct Article: Codable {
+    let id: Int
     let title: String
-    
-    init(title: String) {
-        self.title = title
-    }
+    let url: String
 }

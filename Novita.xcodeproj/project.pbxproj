@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3574F2DE40446DC1055A4B17 /* Pods_NovitaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978F9475767A4779184B446 /* Pods_NovitaTests.framework */; };
-		4FD53ED749DFD966D5ECB962 /* Pods_NovitaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4D969EE060BD3D8BD4266B /* Pods_NovitaUITests.framework */; };
+		59F030DA1FC3CC0000C57567 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E41BA31FB6CE6B008534BF /* RxCocoa.framework */; };
+		59F030DB1FC3CC0000C57567 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E41BA51FB6CE6B008534BF /* RxSwift.framework */; };
+		59F030DD1FC3CC0000C57567 /* ReactorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F030DC1FC3CC0000C57567 /* ReactorKit.framework */; };
+		59F030DE1FC3CEAD00C57567 /* ReactorKitRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */; };
 		D31395ED1FB6F38A009D5E8F /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D31395EC1FB6F38A009D5E8F /* ArticleViewController.xib */; };
 		D31AF4801FC1A9D2009E9021 /* APIKit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */; };
 		D31AF4831FC1BC3D009E9021 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AF4821FC1BC3D009E9021 /* Article.swift */; };
@@ -28,7 +30,6 @@
 		D3F4399E1FC186EA00944953 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F4399D1FC186EA00944953 /* ServiceProvider.swift */; };
 		D3F439A11FC1A30800944953 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F4399F1FC1A30800944953 /* APIKit.framework */; };
 		D3F439A21FC1A30800944953 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F439A01FC1A30800944953 /* Result.framework */; };
-		F1AB00DEB39890498871F9B1 /* Pods_Novita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF0BDF07EEF939A7B030A79 /* Pods_Novita.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		185EA9933841CD2C6055BFD6 /* Pods-NovitaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovitaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovitaTests/Pods-NovitaTests.release.xcconfig"; sourceTree = "<group>"; };
-		3978F9475767A4779184B446 /* Pods_NovitaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovitaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D4D969EE060BD3D8BD4266B /* Pods_NovitaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NovitaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7649D94E192639C8D0D8EA4E /* Pods-Novita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novita.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novita/Pods-Novita.debug.xcconfig"; sourceTree = "<group>"; };
-		7D5B9EECA08A6CBDE6D64AF5 /* Pods-NovitaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovitaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovitaUITests/Pods-NovitaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		831E5E831DAE4D4DD297AEBE /* Pods-Novita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novita.release.xcconfig"; path = "Pods/Target Support Files/Pods-Novita/Pods-Novita.release.xcconfig"; sourceTree = "<group>"; };
-		ADAFC399BD074A94C05A4668 /* Pods-NovitaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovitaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NovitaUITests/Pods-NovitaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BBC7961852BDAF59AE872B71 /* Pods-NovitaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovitaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NovitaTests/Pods-NovitaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCF0BDF07EEF939A7B030A79 /* Pods_Novita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Novita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F030DC1FC3CC0000C57567 /* ReactorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKit.framework; path = Carthage/Build/iOS/ReactorKit.framework; sourceTree = "<group>"; };
 		D31395EC1FB6F38A009D5E8F /* ArticleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactorKitRuntime.framework; path = Carthage/Build/iOS/ReactorKitRuntime.framework; sourceTree = "<group>"; };
 		D31AF47F1FC1A9D2009E9021 /* APIKit+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIKit+Rx.swift"; sourceTree = "<group>"; };
@@ -95,9 +88,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F030DE1FC3CEAD00C57567 /* ReactorKitRuntime.framework in Frameworks */,
+				59F030DD1FC3CC0000C57567 /* ReactorKit.framework in Frameworks */,
+				59F030DA1FC3CC0000C57567 /* RxCocoa.framework in Frameworks */,
+				59F030DB1FC3CC0000C57567 /* RxSwift.framework in Frameworks */,
 				D3F439A11FC1A30800944953 /* APIKit.framework in Frameworks */,
 				D3F439A21FC1A30800944953 /* Result.framework in Frameworks */,
-				F1AB00DEB39890498871F9B1 /* Pods_Novita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3574F2DE40446DC1055A4B17 /* Pods_NovitaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,26 +108,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD53ED749DFD966D5ECB962 /* Pods_NovitaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BA1CA2A6399FB2C2F994C85 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7649D94E192639C8D0D8EA4E /* Pods-Novita.debug.xcconfig */,
-				831E5E831DAE4D4DD297AEBE /* Pods-Novita.release.xcconfig */,
-				BBC7961852BDAF59AE872B71 /* Pods-NovitaTests.debug.xcconfig */,
-				185EA9933841CD2C6055BFD6 /* Pods-NovitaTests.release.xcconfig */,
-				7D5B9EECA08A6CBDE6D64AF5 /* Pods-NovitaUITests.debug.xcconfig */,
-				ADAFC399BD074A94C05A4668 /* Pods-NovitaUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D31AF47E1FC1A994009E9021 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +147,6 @@
 				D3E41B921FB6CC94008534BF /* NovitaUITests */,
 				D3E41B711FB6CC94008534BF /* Products */,
 				D3E41BA11FB6CE6B008534BF /* Frameworks */,
-				2BA1CA2A6399FB2C2F994C85 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +193,7 @@
 		D3E41BA11FB6CE6B008534BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59F030DC1FC3CC0000C57567 /* ReactorKit.framework */,
 				D3F4399F1FC1A30800944953 /* APIKit.framework */,
 				D3F439A01FC1A30800944953 /* Result.framework */,
 				D31395FD1FBB3064009D5E8F /* ReactorKitRuntime.framework */,
@@ -220,9 +201,6 @@
 				D3E41BA41FB6CE6B008534BF /* Quick.framework */,
 				D3E41BA31FB6CE6B008534BF /* RxCocoa.framework */,
 				D3E41BA51FB6CE6B008534BF /* RxSwift.framework */,
-				BCF0BDF07EEF939A7B030A79 /* Pods_Novita.framework */,
-				3978F9475767A4779184B446 /* Pods_NovitaTests.framework */,
-				6D4D969EE060BD3D8BD4266B /* Pods_NovitaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -284,12 +262,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3E41B981FB6CC94008534BF /* Build configuration list for PBXNativeTarget "Novita" */;
 			buildPhases = (
-				A41A2FC4D6956069E35B32A0 /* [CP] Check Pods Manifest.lock */,
 				D3E41B6C1FB6CC94008534BF /* Sources */,
 				D3E41B6D1FB6CC94008534BF /* Frameworks */,
 				D3E41B6E1FB6CC94008534BF /* Resources */,
-				AC107966D8A49894D3C6D3B9 /* [CP] Embed Pods Frameworks */,
-				695BD2CC6A1E188F4A74A8B8 /* [CP] Copy Pods Resources */,
 				D3F439A41FC1A31C00944953 /* ShellScript */,
 			);
 			buildRules = (
@@ -305,12 +280,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3E41B9B1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaTests" */;
 			buildPhases = (
-				3D40F9369457B0331D3FF108 /* [CP] Check Pods Manifest.lock */,
 				D3E41B801FB6CC94008534BF /* Sources */,
 				D3E41B811FB6CC94008534BF /* Frameworks */,
 				D3E41B821FB6CC94008534BF /* Resources */,
-				BDEB783FA6DD0D3B77B8B808 /* [CP] Embed Pods Frameworks */,
-				16144D1B9C53C39A4C6494F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,12 +298,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3E41B9E1FB6CC94008534BF /* Build configuration list for PBXNativeTarget "NovitaUITests" */;
 			buildPhases = (
-				EB6114DA2681410073F7E8FF /* [CP] Check Pods Manifest.lock */,
 				D3E41B8B1FB6CC94008534BF /* Sources */,
 				D3E41B8C1FB6CC94008534BF /* Frameworks */,
 				D3E41B8D1FB6CC94008534BF /* Resources */,
-				87D5344B9C7E467B4CD73C29 /* [CP] Embed Pods Frameworks */,
-				DFC667284970D731095E88B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,124 +387,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16144D1B9C53C39A4C6494F7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovitaTests/Pods-NovitaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D40F9369457B0331D3FF108 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NovitaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		695BD2CC6A1E188F4A74A8B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novita/Pods-Novita-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87D5344B9C7E467B4CD73C29 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovitaUITests/Pods-NovitaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A41A2FC4D6956069E35B32A0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Novita-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AC107966D8A49894D3C6D3B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Novita/Pods-Novita-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novita/Pods-Novita-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BDEB783FA6DD0D3B77B8B808 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovitaTests/Pods-NovitaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D3F439A41FC1A31C00944953 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,45 +395,16 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactorKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactorKitRuntime.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		DFC667284970D731095E88B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NovitaUITests/Pods-NovitaUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB6114DA2681410073F7E8FF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NovitaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -757,7 +579,6 @@
 		};
 		D3E41B991FB6CC94008534BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7649D94E192639C8D0D8EA4E /* Pods-Novita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -777,7 +598,6 @@
 		};
 		D3E41B9A1FB6CC94008534BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 831E5E831DAE4D4DD297AEBE /* Pods-Novita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -797,7 +617,6 @@
 		};
 		D3E41B9C1FB6CC94008534BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC7961852BDAF59AE872B71 /* Pods-NovitaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -814,7 +633,6 @@
 		};
 		D3E41B9D1FB6CC94008534BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185EA9933841CD2C6055BFD6 /* Pods-NovitaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -831,7 +649,6 @@
 		};
 		D3E41B9F1FB6CC94008534BF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D5B9EECA08A6CBDE6D64AF5 /* Pods-NovitaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -847,7 +664,6 @@
 		};
 		D3E41BA01FB6CC94008534BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADAFC399BD074A94C05A4668 /* Pods-NovitaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
